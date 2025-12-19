@@ -15,7 +15,7 @@ const Header = () => {
         return (
             <ul className={"flex flex-col gap-4 justify-between items-center leading-none sm:flex-row"}>
                 {navLinks.map((item) => (
-                    <li className={"text-base"} key={item.id}>
+                    <li className={"font-mono"} key={item.id}>
                         <a href={item.href}>
                             {item.name}
                         </a>
@@ -26,8 +26,9 @@ const Header = () => {
     }
 
     return (
+        <>
         <header className={"bg-[transparent]"}>
-            <div className={"w-9/12 h-16 flex justify-between items-center mx-auto font-mono max-w-7xl"}>
+            <div className={"w-9/12 max-w-7xl h-16 flex justify-between items-center mx-auto font-mono"}>
                 <h1 className={"leading-none flex items-center"}>My Portfolio<span className={"text-rose-400 text-3xl leading-none"}>.</span></h1>
                 <button onClick={toggleMenu} className="text-neutral-400 hover:text-white focus:outline-none
                      sm:hidden flex" aria-label="Toggle Menu">
@@ -50,6 +51,12 @@ const Header = () => {
                 </nav>
             </div>
         </header>
+        <section className={"h-[calc(100vh-4rem)] w-full"}>
+            <div className={"pt-[calc(20vh)] w-9/12 mx-auto"}>
+                <h1 className={"font-mono text-6xl text-[#333333] sm:text-8xl md:text-9xl"}>Hello,<br/> you</h1>
+            </div>
+        </section>
+        </>
     )
 }
 export default Header
