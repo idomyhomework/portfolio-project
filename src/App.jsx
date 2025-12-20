@@ -3,6 +3,7 @@ import Header from "./components/Header.jsx";
 import PortfolioProject from "./components/PortfolioProject.jsx";
 import {portfolioProjects} from "./constants/index.js";
 import Footer from "./components/Footer.jsx";
+import Contact from './components/Contact.jsx';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
                               href={portfolioProject.href}
                                 number={portfolioProject.number}/>
         ))}
+        <Contact/>
         <Footer/>
+        
 
     </>
   )

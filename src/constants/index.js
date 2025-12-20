@@ -42,7 +42,7 @@ export const portfolioProjects = [
     {
         id: 3,
         name: 'Looking for Life beyond Earth',
-        description: 'Looking for Life Beyond Earth is a project whose description would be wholly redundant.',
+        description: 'A project whose description would be wholly redundant.',
         href: '',
         backgroundImg: beyondEarthImg,
         number: '03',
