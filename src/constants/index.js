@@ -82,3 +82,61 @@ export const footerLinks = [
 
     },
 ]
+
+export const contactInput = [
+    {
+        id: 1,
+        type: 'text',
+        name: 'first_name',
+        placeholder: 'Leo',
+        isRequired: true,
+        label: 'First name',
+        pattern: "*.",
+    },
+    {
+        id: 2,
+        type: 'text',
+        name: 'last_name',
+        placeholder: 'Messi',
+        isRequired: true,
+        label: 'Last name',
+        pattern: "*.",
+    },
+    {
+        id:3,
+        type: 'email',
+        name: 'email',
+        placeholder: 'leomessi@gmail.com',
+        isRequired: true,
+        label: 'Email',
+        pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+    },
+    {
+        id: 4,
+        type: 'text',
+        name: 'company',
+        placeholder: 'Company Name',
+        isRequired: false,
+        label: 'Company',
+        pattern: "*.",
+    },
+    {
+        id: 5,
+        type: 'tel',
+        name: 'phone',
+        placeholder: '123-45-678',
+        label: 'Phone number',
+        pattern: '^\\+?[0-9\\s\\-()]{7,20}$',
+        isRequired: false,
+    },
+    {
+        id: 6,
+        type: 'url',
+        name: 'website',
+        placeholder:'idomyhomework.com',
+        isRequired: false,
+        pattern: '*.',
+        label: 'Website',
+    },
+
+]
