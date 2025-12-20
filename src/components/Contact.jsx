@@ -79,7 +79,7 @@ const Contact = () => {
               <input
                 type="url"
                 id="website"
-                class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-text-rose-400 block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
                 placeholder="idomyhomework.com"
                 required
               />
