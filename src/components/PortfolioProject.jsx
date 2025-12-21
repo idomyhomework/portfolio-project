@@ -9,7 +9,7 @@ const PortfolioProject = ({
   number,
 }) => {
   return (
-    <section
+    <div
       className={"h-screen relative"}
       style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: "cover" }}
     >
@@ -20,21 +20,21 @@ const PortfolioProject = ({
         }
       >
         <h1 className={"text-7xl md:text-8xl text-[#808080] mb-4"}>{number}</h1>
-        <h2 className={"text-white font-bold text-3xl z-50 mb-16 md:text-4xl"}>
+        <h2 className={"text-white font-bold text-3xl z-40 mb-16 md:text-4xl"}>
           {name}
         </h2>
         <p
           className={
-            "text-[#7A7A7A] text-[14px] max-w-[50%] mb-10 md:mb-16 z-50 sm:text-base md:text-xl"
+            "text-[#7A7A7A] text-[14px] max-w-[50%] mb-10 md:mb-16 z-40 sm:text-base md:text-xl"
           }
         >
           {description}
         </p>
-        <a href={href} className={"text-white z-50 text-xl"}>
+        <a href={href} className={"text-white z-40 text-xl"}>
           View project
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 export default PortfolioProject;

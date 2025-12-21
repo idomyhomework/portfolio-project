@@ -9,6 +9,7 @@ function App() {
   return (
     <>
         <Header/>
+        <section id="projects">
         {portfolioProjects.map(portfolioProject => (
             <PortfolioProject key={portfolioProject.id} name={portfolioProject.name}
                               description={portfolioProject.description}
@@ -16,6 +17,7 @@ function App() {
                               href={portfolioProject.href}
                                 number={portfolioProject.number}/>
         ))}
+        </section>
         <Contact/>
         <Footer/>
         
