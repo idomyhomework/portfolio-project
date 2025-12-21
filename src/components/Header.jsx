@@ -12,9 +12,14 @@ const Header = () => {
       const projectsSection = document.getElementById("projects");
       if (projectsSection) {
         const projectsPositionTop = projectsSection.getBoundingClientRect().top;
-        const projectsPositionBottom = projectsSection.getBoundingClientRect().bottom;
-        setVisible(projectsPositionTop > 0 || projectsPositionBottom < 0);
-      } 
+        const projectsPositionBottom =
+          projectsSection.getBoundingClientRect().bottom;
+        const isVisibleNow = projectsPositionTop > 0 || projectsPositionBottom < 0
+        setVisible(isVisibleNow);
+        if (!isVisibleNow) {
+          setOpen(false);
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +39,7 @@ const Header = () => {
         }
       >
         {navLinks.map((item) => (
-          <li className={"font-mono"} key={item.id}>
+          <li className={"header-nav-links"} key={item.id}>
             <a href={item.href}>{item.name}</a>
           </li>
         ))}
@@ -77,7 +82,7 @@ const Header = () => {
 
         <div
           className={`nav-sidebar ${
-            isOpen
+            isOpen && isVisible
               ? "opacity-100 scale-y-100 max-h-96"
               : "opacity-0 scale-y-0 max-h-0 pointer-events-none"
           }`}

@@ -6,7 +6,7 @@ const Footer = () => {
         return (
             <ul className={"flex flex-col gap-4 justify-between leading-none sm:flex-row"}>
                 {footerLinks.map((item) => (
-                    <li className={"font-mono text-[#808080] ml-2"} key={item.id}>
+                    <li className={"footer-nav-link"} key={item.id}>
                         <a href={item.href} target="_blank">
                             {item.name}
                         </a>
